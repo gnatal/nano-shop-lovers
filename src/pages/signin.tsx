@@ -1,12 +1,11 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
 import type { NextPage } from 'next'
-import styles from 'styles/Home.module.css'
+import { SignIn as Page } from 'components/signin';
 
-const SignIn: NextPage = () => (
-    <div className={styles.container}>
-        first page
-    </div>
+const Component: NextPage = (props) => (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <Page {...props} />
 )
 
-export default SignIn;
+export default Component;
