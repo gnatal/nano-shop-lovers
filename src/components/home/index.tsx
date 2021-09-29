@@ -12,7 +12,7 @@ export const Home: NextPage = () => (
             <h1 className={styles.home_header_title}>What do you need today ?</h1>
         </div>
         <div className={styles.home_presentation_box}>
-            <Link href={"/products"}>
+            <Link href={"/services"}>
                 <div className={styles.home_card_box}>
                     <img className={styles.home_card_image} src={servicesImage} alt="services card" />
                     <p className={styles.home_card_text}>Services</p>

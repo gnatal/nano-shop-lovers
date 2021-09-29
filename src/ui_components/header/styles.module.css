@@ -6,6 +6,26 @@
     grid-template-columns: 2fr 8fr;
 }
 
+.header_tabs_box{
+    display: flex;
+    align-items: center;
+}
+
+.header_links_box{
+    position: absolute;
+    right: 20px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_link{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
 .header_name{
     font-weight: 900;
     color: #6e6e6e;
@@ -13,9 +33,14 @@
     padding: 10px 5px;
 }
 
+.nano_image_box{
+    width: 5em;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+}
 
 .nano_image{
-    position: absolute;
-    right: 20px;
     width: 5em;
 }
