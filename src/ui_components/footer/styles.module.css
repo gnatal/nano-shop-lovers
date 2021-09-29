@@ -1,0 +1,29 @@
+.footer_box{
+    border-top: solid rgba(20,20,20,0.5);
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    padding: 10px;
+}
+
+.links_box{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5em;
+}
+
+.footer_links_style{
+    font-weight: bold;
+}
+
+.footer_logo_box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer_logo_style{
+    padding-right: 30px;
+    height: 50%;
+}
