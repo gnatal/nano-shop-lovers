@@ -1,23 +1,30 @@
 .desktop_nav_container{
     width: 20vw;
-    background: #fff;
+    background: #4A90E2;
     margin-top: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: inline-block;
+    box-shadow: 3px 0px 5px 2px rgb(20 20 20 / 20%);    
 }
 
 .link{
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .link:hover{
-    background: #f0f0f0;
+    background: #4e9eEe;
+    transition: 0.3s;
+}
+
+.link:hover > .link_text{
+    color: #ccc;
 }
 
 .link_text{
     padding-left: 10px;
     font-weight: bold;
+    color: #fff;
 }

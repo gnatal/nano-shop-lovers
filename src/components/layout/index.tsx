@@ -8,8 +8,11 @@ export default function Layout({ children }: { children: ReactNode }) {
     return (
         <>
             <Header />
-            <DesktopNav />
-            <main className={styles.main_body}>{children}</main>
+
+            <main className={styles.main_body_container}>
+                <DesktopNav />
+                {children}
+            </main>
             <Footer />
         </>
     )

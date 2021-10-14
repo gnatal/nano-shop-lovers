@@ -6,11 +6,11 @@ import Link from 'next/link'
 const NavLink = ({ link, linkName }: { link: string, linkName: string }) =>
 (
     <>
-        <div className={styles.link}>
-            <Link href={link}>
+        <Link href={link}>
+            <div className={styles.link}>
                 <a className={styles.link_text}>{linkName}</a>
-            </Link>
-        </div>
+            </div>
+        </Link>
     </>
 )
 

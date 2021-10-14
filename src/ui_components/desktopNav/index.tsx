@@ -14,7 +14,6 @@ const DesktopNav = ({ ...props }: {}) =>
             <NavLink link={"/newProduct"} linkName={"New product"} />
             <NavLink link={"/wallet"} linkName={"Wallet"} />
             <NavLink link={"/configuration"} linkName={"Configuration"} />
-
         </div>
     </>
 )

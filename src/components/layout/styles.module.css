@@ -2,3 +2,9 @@
     background: #4A90E2;
     overflow: auto;
 }
+
+.main_body_container{
+    background: #4A90E2;
+    display: grid;
+    grid-template-areas: 'nav body body body body';
+}
