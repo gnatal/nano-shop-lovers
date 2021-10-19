@@ -5,7 +5,7 @@ import styles from 'ui_components/input/styles.module.css'
 
 const Input = ({ ...props }) =>
 (
-    <input {...props} className={cn(styles.input_primary)} />
+    <input {...props} className={styles.input_primary} />
 )
 
 export default Input;

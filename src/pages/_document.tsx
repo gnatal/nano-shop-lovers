@@ -7,7 +7,6 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>Nano lovers shop</title>
                     <link rel="icon" href={navIcon}></link>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />

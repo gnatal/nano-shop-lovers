@@ -6,5 +6,7 @@
 .main_body_container{
     background: #4A90E2;
     display: grid;
-    grid-template-areas: 'nav body body body body';
+    min-height: 70vh;
+    grid-template-columns: 1fr 4fr;
 }
+

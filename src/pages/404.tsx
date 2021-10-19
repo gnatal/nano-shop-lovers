@@ -2,14 +2,10 @@
 import React from 'react';
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import { PageNotFound as Page } from 'components/404';
 
 const Component: NextPage = (props) => (
-    <div>
-        Page not found
-        <Link href="/">
-            <a>Back to home</a>
-        </Link>
-    </div>
+    <Page {...props} />
 )
 
 export default Component;

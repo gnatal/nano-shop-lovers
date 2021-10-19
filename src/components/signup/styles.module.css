@@ -4,3 +4,7 @@
     border-radius: 6px;
     text-align: center;
 }
+
+.error{
+    color:#ffcc22;
+}

@@ -1,0 +1,17 @@
+.page_not_found_box{
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.page_not_found_text{
+    color: #fff;
+}
+
+.nano_icon_box{
+    margin: 10px auto;
+    width: 80%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
