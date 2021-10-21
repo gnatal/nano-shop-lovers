@@ -5,20 +5,14 @@ import Button from 'ui_components/button';
 import Input from 'ui_components/input';
 import { Form as FormBox } from 'ui_components/form';
 import { useForm, SubmitHandler } from "react-hook-form";
+import { ISignUpForm } from 'components/signup/types';
 // eslint-disable-next-line import/prefer-default-export
 
-interface ISignUpForm {
-    name: string;
-    email: string;
-    password: string;
-    confirmPassword: string;
-}
 
 export const SignUp = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm<ISignUpForm>();
     const onSubmit: SubmitHandler<ISignUpForm> = data => {
-        console.log("calling submit")
         console.log(data)
     };
 
@@ -26,16 +20,16 @@ export const SignUp = () => {
         <>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <FormBox >
-                    <Input placeholder={"nano address"} {...register('name', { required: true })} />
-                    {errors.name && <span className={styles.error}>This field is required</span>}
-                    <Input
+                    <input placeholder={"nano address"} {...register('address', { required: true })} />
+                    {errors.address && <span className={styles.error}>This field is required</span>}
+                    <input
                         placeholder={"email"}
                         {...register("email", { required: true })}
                     />
                     {errors.email && <span className={styles.error}>This field is required</span>}
-                    <Input placeholder={"password"} type={"password"} {...register('password', { required: true })} />
+                    <input placeholder={"password"} type={"password"} {...register('password', { required: true })} />
                     {errors.password && <span className={styles.error}>This field is required</span>}
-                    <Input placeholder={"confirm password"} type={"password"} {...register('confirmPassword', { required: true })} />
+                    <input placeholder={"confirm password"} type={"password"} {...register('confirmPassword', { required: true })} />
                     {errors.confirmPassword && <span className={styles.error}>This field is required</span>}
                     <div className={styles.signup_button_box}>
                         <Button>Sign up</Button>
