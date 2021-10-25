@@ -1,0 +1,43 @@
+.product_grid{
+    margin: 40px auto;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: minmax(250px,1fr) minmax(250px,1fr) minmax(250px,1fr) minmax(250px,1fr);
+    grid-gap: 3em;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.search_box{
+    margin: 10px auto;
+    width: 300px;    
+    border-radius: 6px;
+    background-color: #fff;
+    display: grid;
+    height: 40px;
+    grid-template-columns: 19fr 1fr;
+
+    @media(max-width: 768px){
+        width: 90vw;
+    }
+
+    & > input{
+       width: 100%; 
+       padding-left: 10px;
+       border:none;
+       font-size: 1.2em;
+       height: 40px;
+       font-weight: bold;
+       border-radius: 6px;
+    }
+
+    & > input:focus{
+        outline: none;
+    }
+
+    & > img{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}

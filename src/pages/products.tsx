@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react'
 import type { NextPage } from 'next'
-import { Home as Page } from 'components/home'
+import { Products as Page } from 'components/products'
 
 
 const Home: NextPage = (props) => (

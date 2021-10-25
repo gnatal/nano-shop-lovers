@@ -6,7 +6,7 @@ import DesktopNav from "ui_components/desktopNav";
 
 export default function Layout({ children }: { children: ReactNode }) {
 
-    const [menuOpen, setMenuOpen] = useState(true)
+    const [menuOpen, setMenuOpen] = useState(false)
 
 
     return (
@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             <Header />
 
             <main className={styles.main_body_container}>
-                {menuOpen ? <DesktopNav /> : <div></div>}
+                {menuOpen ? <DesktopNav /> : null}
                 <div>
                     {children}
                 </div>

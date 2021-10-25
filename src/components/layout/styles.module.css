@@ -7,6 +7,6 @@
     background: #4A90E2;
     display: grid;
     min-height: 70vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
